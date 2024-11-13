@@ -13,6 +13,58 @@
     />
     <link rel="stylesheet" href="styles.css" />
     <title>Web Design Mastery | Foodman</title>
+    <style>
+      /* Basic responsive styles */
+      body {
+        font-family: Arial, sans-serif;
+      }
+
+      /* Adjust header content text sizes using relative units */
+      .header__content h1 {
+        font-size: 5vw; /* Responsive heading */
+        line-height: 1.2;
+      }
+
+      .header__content h1 span {
+        color: #ff6347;
+      }
+
+      .section__description {
+        font-size: 2vw; /* Responsive paragraph */
+        margin-top: 1em;
+      }
+
+      .btn {
+        padding: 0.8em 2em;
+        font-size: 1.2vw; /* Responsive button text */
+      }
+
+      /* Fine-tune text sizes for smaller screens */
+      @media (max-width: 768px) {
+        .header__content h1 {
+          font-size: 8vw;
+        }
+        .section__description {
+          font-size: 3vw;
+        }
+        .btn {
+          font-size: 2vw;
+        }
+      }
+
+      /* Adjust text for extra-large screens */
+      @media (min-width: 1200px) {
+        .header__content h1 {
+          font-size: 4vw;
+        }
+        .section__description {
+          font-size: 1.5vw;
+        }
+        .btn {
+          font-size: 1vw;
+        }
+      }
+    </style>
   </head>
   <body>
     <nav>
@@ -36,6 +88,7 @@
         </a>
       </div>
     </nav>
+
     <header class="section__container header__container" id="home">
       <div class="header__image">
         <img src="assets/header.png" alt="header" />
@@ -52,4 +105,6 @@
       </div>
     </header>
   </body>
+</html>
+
 </html>
